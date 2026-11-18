@@ -40,14 +40,6 @@ type StoredOutfit = {
   createdAt: number;
 };
 
-type ResolvedOutfit = StoredOutfit & {
-  shirt: FashionItem | null;
-  pants: FashionItem | null;
-  shoes: FashionItem | null;
-  watch: FashionItem | null;
-  originalIndex: number;
-};
-
 type DateFilter = "all" | "7days" | "30days";
 
 function readOutfitHistory(): StoredOutfit[] {
